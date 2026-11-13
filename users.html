@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User management &middot; MediStock</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="sidebar" aria-label="Main navigation">
+  <div class="brand">MediStock<span>Pharmacy retail manager</span></div>
+  <ul class="nav">
+      <li><a class="" href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span class="label">Dashboard</span></a></li>
+      <li><a class="active" href="users.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span class="label">User management</span></a></li>
+      <li><a class="" href="medicines.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="4"/><line x1="12" y1="8" x2="12" y2="16"/></svg><span class="label">Medicines</span></a></li>
+      <li><a class="" href="batches.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg><span class="label">Batches & expiry</span></a></li>
+      <li><a class="" href="stock.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7v10l10 5 10-5V7z"/><path d="M2 7l10 5 10-5"/><path d="M12 12v10"/></svg><span class="label">Stock</span></a></li>
+      <li><a class="" href="sales.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L22 7H6"/></svg><span class="label">Sales</span></a></li>
+      <li><a class="" href="alerts.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="label">Alerts & reorder</span></a></li>
+      <li><a class="" href="suppliers.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/></svg><span class="label">Suppliers</span></a></li>
+      <li><a class="" href="reports.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="20" x2="6" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="18" y1="20" x2="18" y2="14"/></svg><span class="label">Reports</span></a></li>
+  </ul>
+  <div class="sidebar-foot">Signed in as<br><strong style="color:#fff">R. Kumar</strong> &middot; Pharmacist</div>
+</nav>
+<main class="main">
+  <div class="topbar">
+    <div>
+      <h1>User management</h1>
+      <p>Staff accounts, roles and access logs</p>
+    </div>
+  </div>
+  
+<div class="row-actions">
+  <input type="search" placeholder="Search users...">
+  <select><option>All roles</option><option>Admin</option><option>Pharmacist</option><option>Sales staff</option></select>
+  <button class="btn btn-primary">+ Add user</button>
+</div>
+<div class="card">
+  <div class="table-wrap"><table>
+    <thead><tr><th>Name</th><th>Role</th><th>Username</th><th>Last active</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>R. Kumar</td><td><span class="badge neutral">Admin</span></td><td>r.kumar</td><td>Just now</td><td><span class="badge green">Active</span></td><td><a class="btn btn-outline" href="#">Manage</a></td></tr>
+      <tr><td>S. Priya</td><td><span class="badge neutral">Pharmacist</span></td><td>s.priya</td><td>20 min ago</td><td><span class="badge green">Active</span></td><td><a class="btn btn-outline" href="#">Manage</a></td></tr>
+      <tr><td>M. Arun</td><td><span class="badge neutral">Sales staff</span></td><td>m.arun</td><td>1 hr ago</td><td><span class="badge green">Active</span></td><td><a class="btn btn-outline" href="#">Manage</a></td></tr>
+      <tr><td>K. Divya</td><td><span class="badge neutral">Sales staff</span></td><td>k.divya</td><td>3 days ago</td><td><span class="badge amber">Inactive</span></td><td><a class="btn btn-outline" href="#">Manage</a></td></tr>
+    </tbody>
+  </table></div>
+</div>
+<div class="card mt">
+  <div class="section-title">Recent activity log</div>
+  <div class="table-wrap"><table>
+    <thead><tr><th>User</th><th>Action</th><th>Time</th></tr></thead>
+    <tbody>
+      <tr><td>S. Priya</td><td>Approved purchase order PO-118</td><td>09:41 AM</td></tr>
+      <tr><td>M. Arun</td><td>Recorded sale INV-1042</td><td>11:52 AM</td></tr>
+      <tr><td>R. Kumar</td><td>Marked batch AZT-2291 near-expiry</td><td>08:15 AM</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+  <footer class="note">MediStock &middot; Pharmaceutical Retail Stock Manager &middot; sample data for demonstration</footer>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
